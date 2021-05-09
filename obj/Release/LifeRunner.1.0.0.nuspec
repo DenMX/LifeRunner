@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LifeRunner</id>
+    <version>1.0.0</version>
+    <authors>LifeRunner</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="5.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\DenMX\source\repos\LifeRunner\obj\Release\netcoreapp3.1\ru\LifeRunner.resources.dll" target="lib\netcoreapp3.1\ru\LifeRunner.resources.dll" />
+    <file src="C:\Users\DenMX\source\repos\LifeRunner\bin\Release\netcoreapp3.1\LifeRunner.runtimeconfig.json" target="lib\netcoreapp3.1\LifeRunner.runtimeconfig.json" />
+    <file src="C:\Users\DenMX\source\repos\LifeRunner\bin\Release\netcoreapp3.1\LifeRunner.dll" target="lib\netcoreapp3.1\LifeRunner.dll" />
+  </files>
+</package>

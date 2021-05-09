@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PackageIcon>Icon_V2.png</PackageIcon>
+    <Version>1.2.0</Version>
+    <ApplicationIcon>Icon_V2.ico</ApplicationIcon>
+    <Authors>DenMX</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Images\Background_Bich.jpg" />
+    <None Remove="View\Images\Calendar.png" />
+    <None Remove="View\Images\Check.png" />
+    <None Remove="View\Images\Close-icon.png" />
+    <None Remove="View\Images\Edit.png" />
+    <None Remove="View\Images\Graph.png" />
+    <None Remove="View\Images\Icon_V2.png" />
+    <None Remove="View\Images\List.png" />
+    <None Remove="View\Images\Stopwatch.png" />
+    <None Remove="View\Images\Task.png" />
+    <None Remove="View\Images\Trash.png" />
+    <None Include="View\Images\Icon_V2.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Images\Background_Bich.jpg" />
+    <Resource Include="View\Images\Calendar.png" />
+    <Resource Include="View\Images\Check.png" />
+    <Resource Include="View\Images\Close-icon.png" />
+    <Resource Include="View\Images\Edit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Images\Graph.png" />
+    <Resource Include="View\Images\Icon_V2.png" />
+    <Resource Include="View\Images\List.png" />
+    <Resource Include="View\Images\Pencil.png" />
+    <Resource Include="View\Images\Stopwatch.png" />
+    <Resource Include="View\Images\Task.png" />
+    <Resource Include="View\Images\Trash.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,262 @@
+﻿<UserControl x:Class="LifeRunner.View.CalendarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LifeRunner.View"
+             xmlns:res="clr-namespace:LifeRunner.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="Label" BasedOn="{StaticResource Label}"/>
+        <Style TargetType="ListBox" BasedOn="{StaticResource ListBoxTheme}">
+            <Setter Property="Margin" Value="2,20,0,0"/>
+            <Setter Property="Foreground" Value="{StaticResource ForegroundColorBrush}"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Background" Value="{StaticResource NewUIItemsColor}"/>
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource TextBlock}">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="{StaticResource NewPanelColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Border>
+            <Grid>
+                <TextBlock Text="{Binding Days[0].sDay}" FontSize="10"/>
+                <ListBox ItemsSource="{Binding Days[0].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+        <Border  Grid.Column="1">
+            <Grid>
+                <TextBlock Text="{Binding Days[1].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[1].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            </Grid>
+        </Border>
+        <Border Grid.Column="2" >
+            <Grid>
+                <TextBlock Text="{Binding Days[2].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[2].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Column="3">
+            <Grid>
+                <TextBlock Text="{Binding Days[3].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[3].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="1" >
+            <Grid>
+                <TextBlock Text="{Binding Days[4].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[4].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <TextBlock Text="{Binding Days[5].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[5].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" >
+            <Grid>
+                <TextBlock Text="{Binding Days[6].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[6].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="1" Grid.Column="3" >
+            <Grid>
+                <TextBlock Text="{Binding Days[7].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[7].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+        <Border Grid.Row="2">
+            <Grid>
+                <TextBlock Text="{Binding Days[8].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[8].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="2" Grid.Column="1" >
+            <Grid>
+                <TextBlock Text="{Binding Days[9].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[9].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="2" Grid.Column="2" >
+            <Grid>
+                <TextBlock Text="{Binding Days[10].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[10].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="2" Grid.Column="3">
+            <Grid>
+                <TextBlock Text="{Binding Days[11].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[11].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+        <Border Grid.Row="3" >
+            <Grid>
+                <TextBlock Text="{Binding Days[12].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[12].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="3" Grid.Column="1">
+            <Grid>
+                <TextBlock Text="{Binding Days[13].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[13].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="3" Grid.Column="2">
+            <Grid>
+                <TextBlock Text="{Binding Days[14].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[14].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <Border Grid.Row="3" Grid.Column="3">
+            <Grid>
+                <TextBlock Text="{Binding Days[15].sDay}"/>
+                <ListBox ItemsSource="{Binding Days[15].Tasks}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+            
+        </Border>
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="0">
+            <Label Content="{x:Static res:Resources.TasksCount}" />
+            <Label Content="{Binding TotalTasksCount}" Width="50" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="1">
+            <Label Content="{x:Static res:Resources.TasksCompleted}"/>
+            <Label Content="{Binding CompletedTasks}" Width="50" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Right">
+            <Button Command="{Binding EditCommand}" ToolTip="{x:Static res:Resources.Edit}" Style="{StaticResource ImgButton}" Margin="20,0">
+                <Image Source="Images/Pencil.png" Height="20" Width="25"/>
+            </Button>
+            <Button Command="{Binding CancelCommand}" ToolTip="{x:Static res:Resources.Delete}" Style="{StaticResource ImgButton}" Margin="20,0">
+                <Image Source="Images/Trash.png" Height="23" Width="20"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

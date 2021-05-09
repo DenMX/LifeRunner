@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\DenMX\source\repos\LifeRunner\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Dialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TestView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AdditionalView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CalendarView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreatingCategory.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Project.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Projects.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Start.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Task.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Tasks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Dialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StyleSources\MainTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StyleSources\MenuButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TestView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AdditionalView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CalendarView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreatingCategory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Project.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Projects.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Start.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Task.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Tasks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
